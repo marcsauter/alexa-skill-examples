@@ -1,0 +1,4 @@
+authentication: what is your favorite pet ?
+wrong: sorry, but this is not your favorite pet.
+accounts: for which account ? {{ accounts|join(", ") }}
+balance: the balance for your {{ account }} is {{ balance }}

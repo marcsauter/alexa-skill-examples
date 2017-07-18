@@ -1,0 +1,4 @@
+authentication: what is your PIN code ?
+wrong: sorry, this is the wrong PIN code
+accounts: for which account ? {{ accounts|join(", ") }}
+balance: the balance for your {{ account }} is {{ balance }}
