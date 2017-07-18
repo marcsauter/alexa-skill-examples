@@ -1,0 +1,71 @@
+{
+  "intents": [
+      {
+            "name": "AccountIntent",
+            "samples": [
+                    "{account}"
+                  ],
+            "slots": [
+                    {
+                              "name": "account",
+                              "type": "ACCOUNT_TYPE",
+                              "samples": []
+                            }
+                  ]
+          },
+      {
+            "name": "AMAZON.CancelIntent",
+            "samples": []
+          },
+      {
+            "name": "AMAZON.HelpIntent",
+            "samples": []
+          },
+      {
+            "name": "AMAZON.StopIntent",
+            "samples": []
+          },
+      {
+            "name": "PINIntent",
+            "samples": [
+                    "{pin}",
+                    "my pin is {pin}"
+                  ],
+            "slots": [
+                    {
+                              "name": "pin",
+                              "type": "AMAZON.NUMBER",
+                              "samples": []
+                            }
+                  ]
+          }
+    ],
+  "types": [
+      {
+            "name": "ACCOUNT_TYPE",
+            "values": [
+                    {
+                              "id": null,
+                              "name": {
+                                          "value": "Private Account",
+                                          "synonyms": []
+                                        }
+                            },
+                    {
+                              "id": null,
+                              "name": {
+                                          "value": "Student Account",
+                                          "synonyms": []
+                                        }
+                            },
+                    {
+                              "id": null,
+                              "name": {
+                                          "value": "Savings Account",
+                                          "synonyms": []
+                                        }
+                            }
+                  ]
+          }
+    ]
+}
