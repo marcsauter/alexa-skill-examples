@@ -10,7 +10,9 @@
 
 ### Fun
 * [List of known easter eggs for Amazon Echo (so far)](https://www.reddit.com/r/amazonecho/comments/2v15fx/list_of_known_easter_eggs_for_amazon_echo_so_far)
+
 > "Alexa, what's the answer to life, the universe, and everything?"
+
 > "Alexa, what are the laws of robotics?" compare her answer with <a href="https://en.wikipedia.org/wiki/Laws_of_robotics">Laws of robotics<a>
 
 ### Technical
