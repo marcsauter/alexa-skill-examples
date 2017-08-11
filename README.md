@@ -10,7 +10,7 @@
 
 ### Fun
 * <a href="https://www.reddit.com/r/amazonecho/comments/2v15fx/list_of_known_easter_eggs_for_amazon_echo_so_far" target="_blank">List of known easter eggs for Amazon Echo (so far)</a>
-> My favorite: "Alexa, Alexa, what are the laws of robotics?" see also <a href="https://en.wikipedia.org/wiki/Laws_of_robotics">Laws of robotics<a>
+> My favorite: "Alexa, what are the laws of robotics?" compare her answer to <a href="https://en.wikipedia.org/wiki/Laws_of_robotics">Laws of robotics<a>
 
 ### Technical
 * <a href="https://developer.amazon.com/public/solutions/alexa/alexa-skills-kit/docs/understanding-how-users-interact-with-skills#understanding-how-users-interact-with-skills" target="_blank">Understanding How Users Interact with Skills</a>
