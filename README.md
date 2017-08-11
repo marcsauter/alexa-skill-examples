@@ -27,5 +27,4 @@
 
 ## Account Balance Example
 ### Interaction
-<img src="https://raw.githubusercontent.com/marcsauter/alexa-skill-examples/master/images/interaction.svg">
 <img src="https://rawgithub.com/marcsauter/alexa-skill-examples/master/images/interaction.svg">
