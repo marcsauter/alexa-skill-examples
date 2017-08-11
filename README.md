@@ -10,7 +10,8 @@
 
 ### Fun
 * <a href="https://www.reddit.com/r/amazonecho/comments/2v15fx/list_of_known_easter_eggs_for_amazon_echo_so_far" target="_blank">List of known easter eggs for Amazon Echo (so far)</a>
-> one of my favorite: "Alexa, what are the laws of robotics?" compare her answer to <a href="https://en.wikipedia.org/wiki/Laws_of_robotics">Laws of robotics<a>
+> "Alexa, what's the answer to life, the universe, and everything?"
+> "Alexa, what are the laws of robotics?" compare her answer with <a href="https://en.wikipedia.org/wiki/Laws_of_robotics">Laws of robotics<a>
 
 ### Technical
 * <a href="https://developer.amazon.com/public/solutions/alexa/alexa-skills-kit/docs/understanding-how-users-interact-with-skills#understanding-how-users-interact-with-skills" target="_blank">Understanding How Users Interact with Skills</a>
@@ -24,7 +25,7 @@
 
 ## Flask Ask
 * <a href="https://flask-ask.readthedocs.io/en/latest" target="_blank">Flask Ask Documentation</a>
-* <a href="Flask-Ask: A New Python Framework for Rapid Alexa Skills Kit Development" target="_blank">https://developer.amazon.com/de/blogs/post/tx14r0iyygh3skt/flask-ask:-a-new-python-framework-for-rapid-alexa-skills-kit-development</a>
+* <a href="https://developer.amazon.com/de/blogs/post/tx14r0iyygh3skt/flask-ask:-a-new-python-framework-for-rapid-alexa-skills-kit-development" target="_blank">Flask-Ask: A New Python Framework for Rapid Alexa Skills Kit Development</a>
 
 ## Account Balance Example
 ### Interaction
