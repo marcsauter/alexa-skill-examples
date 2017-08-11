@@ -16,9 +16,9 @@
 > "Alexa, what are the laws of robotics?" compare her answer with <a href="https://en.wikipedia.org/wiki/Laws_of_robotics">Laws of robotics<a>
 
 ### Technical
-* [Understanding How Users Interact with Skills](https://developer.amazon.com/public/solutions/alexa/alexa-skills-kit/docs/understanding-how-users-interact-with-skills#understanding-how-users-interact-with-skills)
-* [Choosing the Invocation Name for a Custom Skill](https://developer.amazon.com/public/solutions/alexa/alexa-skills-kit/docs/choosing-the-invocation-name-for-an-alexa-skill#choosing-the-invocation-name-for-a-custom-skill)
-* [Slot Type Reference](https://developer.amazon.com/public/solutions/alexa/alexa-skills-kit/docs/built-in-intent-ref/slot-type-reference#slot-type-referenc)
+* [Understanding How Users Interact with Skills](https://developer.amazon.com/public/solutions/alexa/alexa-skills-kit/docs/understanding-how-users-interact-with-skills)
+* [Choosing the Invocation Name for a Custom Skill](https://developer.amazon.com/public/solutions/alexa/alexa-skills-kit/docs/choosing-the-invocation-name-for-an-alexa-skill)
+* [Slot Type Reference](https://developer.amazon.com/public/solutions/alexa/alexa-skills-kit/docs/built-in-intent-ref/slot-type-reference)
 
 ### Tutorial
 * [Alexa Python Tutorial](https://developer.amazon.com/de/alexa-skills-kit/alexa-skill-quick-start-tutorial)
