@@ -25,7 +25,8 @@
 
 ## Flask Ask
 * <a href="https://flask-ask.readthedocs.io/en/latest" target="_blank">Flask Ask Documentation</a>
-* <a target="_blank" href="https://developer.amazon.com/de/blogs/post/tx14r0iyygh3skt/flask-ask:-a-new-python-framework-for-rapid-alexa-skills-kit-development">Flask-Ask: A New Python Framework for Rapid Alexa Skills Kit Development</a>
+[Flask-Ask: A New Python Framework for Rapid Alexa Skills Kit Development](https://developer.amazon.com/de/blogs/post/tx14r0iyygh3skt/flask-ask:-a-new-python-framework-for-rapid-alexa-skills-kit-development{:target="_blank"})
+*
 
 ## Account Balance Example
 ### Interaction
