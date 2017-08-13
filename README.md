@@ -64,6 +64,7 @@ HTTP Requests
 
 POST /                         200 OK
 ```
+* Update the HTTPS endpoint for your Skill in the [Amazon Developer Console](https://developer.amazon.com) under Configuration - Endpoint.
 
 ### Basic Interaction
 <img src="https://rawgithub.com/marcsauter/alexa-skill-examples/master/images/interaction.svg">
@@ -74,7 +75,7 @@ POST /                         200 OK
 # python account_balance.py
 ```
 
-All Account Balances are hard-coded. Here would be a request to your Account Services.
+All Account Balances are hard-coded. There would be a request to your Account Services.
 
 ### Account Balance with pin
 ```
@@ -82,7 +83,7 @@ All Account Balances are hard-coded. Here would be a request to your Account Ser
 # python account_balance_pin.py
 ```
 
-Yout PIN is **1984**. The PIN is hard-coded.
+Your PIN is **1984**. The PIN is hard-coded.
 
 ### Account Balance with Security Question
 ```
