@@ -36,17 +36,16 @@
 ### Setup
 * python 2.7.x
 * flask-ask
-
-    pip install flask-ask
-    ... or ...
-    pip2 install flask-ask
+```
+# pip install flask-ask
+... or ...
+# pip2 install flask-ask
+```
 
 * ngrok
-
-    ./ngrok http 5000
-
-
 ```
+# ./ngrok http 5000
+
 ngrok by @inconshreveable                                                                                                                                                                                                                                             (Ctrl+C to quit)
 
 Session Status                online
@@ -70,22 +69,25 @@ POST /                         200 OK
 <img src="https://rawgithub.com/marcsauter/alexa-skill-examples/master/images/interaction.svg">
 
 ### Account Balance
-
-    cd account_balance
-    python account_balance.py
+```
+# cd account_balance
+# python account_balance.py
+```
 
 All Account Balances are hard-coded. Here would be a request to your Account Services.
 
 ### Account Balance with pin
+```
+# cd account_balance_pin
+# python account_balance_pin.py
+```
 
-    cd account_balance_pin
-    python account_balance_pin.py
-
-Yout PIN is *1984*. The PIN is hard-coded.
+Yout PIN is **1984**. The PIN is hard-coded.
 
 ### Account Balance with Security Question
+```
+# cd account_balance_pet
+# python account_balance_pet.py
+```
 
-    cd account_balance_pet
-    python account_balance_pet.py
-
-Your favorite pet is a *monkey*. The Answer is hard-coded.
+Your favorite pet is a **monkey**. The Answer is hard-coded.
