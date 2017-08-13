@@ -41,7 +41,7 @@
 ... or ...
 # pip2 install flask-ask
 ```
-
+* configure your skill
 * ngrok
 ```
 # ./ngrok http 5000
@@ -64,7 +64,7 @@ HTTP Requests
 
 POST /                         200 OK
 ```
-* Update the HTTPS endpoint for your Skill in the [Amazon Developer Console](https://developer.amazon.com) under Configuration - Endpoint.
+* Update the HTTPS endpoint (here https://d1c7b569.ngrok.io) for your Skill in the [Amazon Developer Console](https://developer.amazon.com) under Configuration - Endpoint.
 
 ### Basic Interaction
 <img src="https://rawgithub.com/marcsauter/alexa-skill-examples/master/images/interaction.svg">
