@@ -24,6 +24,34 @@
         {
             "name": "AMAZON.StopIntent",
             "samples": []
+        },
+        {
+            "name": "PetIntent",
+            "samples": [
+                "{pet}",
+                "my favorite pet is a {pet}"
+            ],
+            "slots": [
+                {
+                    "name": "pet",
+                    "samples": [],
+                    "type": "AMAZON.Animal"
+                }
+            ]
+        },
+        {
+            "name": "PINIntent",
+            "samples": [
+                "{pin}",
+                "my pin is {pin}"
+            ],
+            "slots": [
+                {
+                    "name": "pin",
+                    "samples": [],
+                    "type": "AMAZON.NUMBER"
+                }
+            ]
         }
     ],
     "types": [

@@ -1,71 +1,71 @@
 {
-  "intents": [
-      {
+    "intents": [
+        {
             "name": "AccountIntent",
             "samples": [
-                    "{account}"
-                  ],
+                "{account}"
+            ],
             "slots": [
-                    {
-                              "name": "account",
-                              "type": "ACCOUNT_TYPE",
-                              "samples": []
-                            }
-                  ]
-          },
-      {
+                {
+                    "name": "account",
+                    "samples": [],
+                    "type": "ACCOUNT_TYPE"
+                }
+            ]
+        },
+        {
             "name": "AMAZON.CancelIntent",
             "samples": []
-          },
-      {
+        },
+        {
             "name": "AMAZON.HelpIntent",
             "samples": []
-          },
-      {
+        },
+        {
             "name": "AMAZON.StopIntent",
             "samples": []
-          },
-      {
+        },
+        {
             "name": "PetIntent",
             "samples": [
-                    "{pet}",
-                    "my favorite pet is a {pet}"
-                  ],
+                "{pet}",
+                "my favorite pet is a {pet}"
+            ],
             "slots": [
-                    {
-                              "name": "pet",
-                              "type": "AMAZON.Animal",
-                              "samples": []
-                            }
-                  ]
-          }
+                {
+                    "name": "pet",
+                    "samples": [],
+                    "type": "AMAZON.Animal"
+                }
+            ]
+        }
     ],
-  "types": [
-      {
+    "types": [
+        {
             "name": "ACCOUNT_TYPE",
             "values": [
-                    {
-                              "id": null,
-                              "name": {
-                                          "value": "Private Account",
-                                          "synonyms": []
-                                        }
-                            },
-                    {
-                              "id": null,
-                              "name": {
-                                          "value": "Student Account",
-                                          "synonyms": []
-                                        }
-                            },
-                    {
-                              "id": null,
-                              "name": {
-                                          "value": "Savings Account",
-                                          "synonyms": []
-                                        }
-                            }
-                  ]
-          }
+                {
+                    "id": null,
+                    "name": {
+                        "synonyms": [],
+                        "value": "Private Account"
+                    }
+                },
+                {
+                    "id": null,
+                    "name": {
+                        "synonyms": [],
+                        "value": "Student Account"
+                    }
+                },
+                {
+                    "id": null,
+                    "name": {
+                        "synonyms": [],
+                        "value": "Savings Account"
+                    }
+                }
+            ]
+        }
     ]
 }

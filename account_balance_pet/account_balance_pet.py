@@ -17,7 +17,7 @@ def authentication():
 
 @ask.intent("PetIntent")
 def which_account(pet):
-    if pet != 'lion':
+    if pet != 'monkey':
         wrong = render_template('wrong')
         return statement(wrong)
     accounts = ['private account', 'student account', 'savings account']
