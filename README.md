@@ -81,7 +81,7 @@ POST /                         200 OK
 * Don't bother with "Account Linking".
 
 #### SSL Certificate Settings
-> It's important to choose the second radio button with the label because that's what ngrok uses.
+> It's important to choose the second radio button with the following label because that's what ngrok uses.
 ```
 My development endpoint is a subdomain of a domain that has a wildcard certificate from a certificate authority.
 ```
