@@ -33,16 +33,16 @@
 * [ngrok - Secure tunnels to localhost](https://ngrok.com)
 
 ## Examples
-### Setup
-* python 2.7.x
-* flask-ask
+### Setup the Skill Service
+> The examples are intended to run on your workstation.
+* Install python 2.7.x with pip
+* Install flask-ask
 ```
 # pip install flask-ask
 ... or ...
 # pip2 install flask-ask
 ```
-* configure your skill
-* ngrok
+* Open a secure tunnel to localhost with ngrok
 ```
 # ./ngrok http 5000
 
@@ -64,7 +64,27 @@ HTTP Requests
 
 POST /                         200 OK
 ```
-* Update the HTTPS endpoint (here https://d1c7b569.ngrok.io) for your Skill in the [Amazon Developer Console](https://developer.amazon.com) under Configuration - Endpoint.
+* You'll need the HTTPS endpoint (here https://d1c7b569.ngrok.io) for your skill configuration. You need to update the HTTPS endpoint each time you start ngrok.
+
+### Configure the Skill
+#### Skill Information Settings
+* Leave the "Skill Type" set to "Custom Interaction Model"
+* Enter "Account Balance" (without quotes) for both the "Name" and "Invocation Name" fields.
+
+#### Interaction Model Settings
+* Copy the JSON in alexa-skill-examples/all_account_intents.json into the "Intent Schema" field.
+* Configure utterances (if you like to) in the "Sample Utterances" field.
+
+#### Configuration Settings
+* Make sure the HTTPS radio button is selected for the "Endpoint" field.
+* Enter the HTTPS endpoint from ngrok into the textfield.
+* Don't bother with "Account Linking".
+
+#### SSL Certificate Settings
+# It's important to choose the second radio button with the label because that's what ngrok uses.
+```
+My development endpoint is a subdomain of a domain that has a wildcard certificate from a certificate authority.
+```
 
 ### Basic Interaction
 <img src="https://rawgithub.com/marcsauter/alexa-skill-examples/master/images/interaction.svg">
