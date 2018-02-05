@@ -239,13 +239,22 @@ Available Languages:
 
 In daily use, most people probably prefer dialect.
 
-* Finally, a quiz
+* Quiz
 
-* When does the recording begin?
+* What will be recorded?
 
-When I say: My new Alexa is awesome!
+When I say: "My new Alexa is awesome!"
 
+Assumption:
 "Alexa" is the wake word, so "is awesome" will be recorded, right?
 
 Let's try it out ...
+
+[[https://alexa.amazon.de/spa/index.html#settings/dialogs][Check the recording ...]]
+
+* Amazon Lex
+
+[[https://aws.amazon.com/de/lex/][Amazon Lex]] is a service for building conversational interfaces into any application using voice and text. Powered by the same conversational engine as Alexa.
+
+: The challenge will be to pass the turing test
 
