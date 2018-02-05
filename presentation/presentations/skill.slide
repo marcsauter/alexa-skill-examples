@@ -1,0 +1,251 @@
+Alexa Skills
+January 2018
+Tags: alexa skill
+
+Marc Sauter
+marc.sauter@postfinance.ch
+
+
+* Amazon, Google, Microsoft
+All these companies have similar service for ASR (automated speech recognition), NLP (natural language processing) and more.
+
+* ASR
+- Amazon Transcribe
+- Google Speech API
+- Microsoft Bing Speech API
+
+* NLP
+- Amazon Comprehend
+- Google Cloud Natural Language API
+- Microsoft Text Analytics API
+
+* Speaker Recognition
+- Amazon Voice ID ??? (roumours since February 2017 see [[http://time.com/4683981/amazon-echo-voice-id-feature-2017/][english]] or [[https://www.golem.de/news/voice-id-alexa-soll-nutzer-an-der-stimme-erkennen-koennen-1702-126445.html][german]])
+- Google ???
+- Microsoft Speaker Recognition API
+
+* Digital Assistant
+- Amazon Alexa
+- Google Home
+- Microsoft Cortana
+
+* Why Amazon ... no commercial ...
+- A lot of devices available
+- Easy to use services
+- APIs for different programming languages
+
+* What is Alexa?
+
+* Alexa is ...
+- the cloud-based voice service from Amazon
+- available on Amazon devices like Echo, Echo Dot, Echo Show, Echo Spot and 3rd-party products like Sonos Speakers.
+
+* What are Skills?
+
+* Skills are ...
+- like apps to enable new abilities for the Alexa devices
+- (part of) the solution to offer services for Alexa (e.g. "Alexa, order a pizza")
+
+* Control devices with Skills:
+- Netatmo
+- Philips Hue
+- Smart plugs
+- Vacuum cleaner
+- Coffee machine
+- ...
+
+* Control services with Skills:
+- Music streaming (Amazon Music, TuneIn, Spotify, Pandora ...)
+- Wikipedia
+- Order food
+- ...
+
+* Skill Demo - Account Balance
+
+* Interaction
+
+.image images/interaction.svg 500 _
+
+* Launch Request
+The *Launch*Request* is the first request after the Skill has been launched.
+
+    {
+      "context": { ... }
+      "request": {
+        "locale": "en-US",
+        "requestId": "amzn1.echo-api.request.9b75782f-ab0f-4c27-af48-f96c3b05b0d5",
+        "timestamp": "2018-02-04T11:02:12Z",
+        "type": "LaunchRequest"
+      },
+      "session": { ... }
+      "version": "1.0"
+    }
+
+: "type": "LaunchRequest"
+
+* Response
+    {
+      "response": {
+        "outputSpeech": {
+          "text": "for which account - private account, student account, savings account",
+          "type": "PlainText"
+        },
+        "shouldEndSession": false
+      },
+      "sessionAttributes": {},
+      "version": "1.0"
+    }
+
+
+* Account Request
+    {
+      "request": {
+        "intent": {
+          "confirmationStatus": "NONE",
+          "name": "AccountIntent",
+          "slots": {
+            "account": {
+              "confirmationStatus": "NONE",
+              "name": "account",
+              "value": "savings account"
+            }
+          }
+        },
+        "locale": "en-US",
+        "requestId": "amzn1.echo-api.request.dd7b27d3-8336-4efd-85a7-907e10c9fc82",
+        "timestamp": "2018-02-04T11:02:21Z",
+        "type": "IntentRequest"
+      },
+      "session": { ... }
+      "version": "1.0"
+    }
+
+: "type": "IntentRequest" -> "name": "AccountIntent"
+
+* Balance Response
+    {
+      "response": {
+        "outputSpeech": {
+          "text": "the balance for your savings account is 5045.3",
+          "type": "PlainText"
+        },
+        "shouldEndSession": true
+      },
+      "sessionAttributes": {},
+      "version": "1.0"
+    }
+
+*shouldEndSession* is set to *true*, so there is no further conversation after this response
+*outputSpeech* type can be one of *PlainText* or *SSML*
+
+: "shouldEndSession": true
+
+* SSML
+
+SSML = [[https://developer.amazon.com/de/docs/custom-skills/speech-synthesis-markup-language-ssml-reference.html][Speech Synthesis Markup Language]]
+
+PlainText:
+
+    the balance for your savings account is 5045.3
+
+SSML:
+
+    <speak>
+        the balance for your savings account is
+        <emphasis level="strong">5045.3</emphasis>
+    </speak>
+
+: demo
+
+* Context
+Each Request has context informations:
+
+    {
+      "context": {
+        "AudioPlayer": {
+          "playerActivity": "IDLE"
+        },
+        "System": {
+          "apiAccessToken": "...",
+          "apiEndpoint": "https://api.eu.amazonalexa.com",
+          "application": {
+            "applicationId": "amzn1.ask.skill.b9e01673-21f6-440a-8d1c-e11ed67eac9f"
+          },
+          "device": {
+            "deviceId": "amzn1.ask.device.AE...YQ",
+            ...
+          },
+          "user": {
+            "userId": "amzn1.ask.account.AH...PQ"
+          }
+        }
+        ...
+    }
+
+* Session
+Each Request has session informations:
+
+    {
+      ...
+      "session": { ... }
+        "application": {
+          "applicationId": "amzn1.ask.skill.b9e01673-21f6-440a-8d1c-e11ed67eac9f"
+        },
+        "new": false,
+        "sessionId": "amzn1.echo-api.session.594e0d63-1965-4855-b520-d15bb6d8579d",
+        "user": {
+          "userId": "amzn1.ask.account.AH...PQ"
+        }
+      },
+    }
+
+: use applicationId to secure your skill service
+
+* Is a digital voice assistant the right device for account informations?
+
+* Trust
+
+Amazon is acting on your behalf, they would know your account details.
+
+What if you receive an email like this:
+
+    To: Customer John
+    From: Amazon
+    Subject: Our new Kindle
+
+    Hi John
+
+    You have just enough money left on your account to buy our new Kindle.
+
+    Yours,
+    Amazon
+
+* Security
+
+How to achieve 2FA with a digital voice assistant?
+
+You don't want to pick up your mobile to give your fingerprint or to enter your secret password. In this case you can get your account balance with your mobile and don't need a digital voice assistant.
+
+May be one day your digital voice assistant gets a camera and does some biometric authentication beside the voice recognition ... but not today.
+
+* Acceptance
+
+Available Languages:
+
+- English Australia, Canada, India, UK, US
+- German (not Swiss-German ... what is Swiss-German anyway?)
+- Japanese
+- ...
+
+In daily use, most people probably prefer dialect.
+
+* Finally, a quiz
+
+* When does the recording begin?
+
+When I say: My new Alexa is awesome!
+
+"Alexa" is the wake word, so "is awesome" will be recorded, right?
+
+Let's try it out ...
+

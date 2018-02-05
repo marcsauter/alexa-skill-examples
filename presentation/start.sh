@@ -1,3 +1,4 @@
 #!/bin/bash
 
-present -base ./www -http=$(hostname):8080
+cd ./presentations
+present -notes -base ../www -http=$(hostname):8080
