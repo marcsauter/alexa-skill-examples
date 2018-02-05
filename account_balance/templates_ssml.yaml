@@ -1,0 +1,2 @@
+accounts: for which account - {{ accounts|join(", ") }}
+balance: <speak>the balance for your {{ account }} is <emphasis level="strong">{{ balance }}</emphasis></speak>
