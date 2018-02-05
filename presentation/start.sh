@@ -1,4 +1,4 @@
 #!/bin/bash
 
-cd ./presentations
+cd ./alexa
 present -notes -base ../www -http=$(hostname):8080

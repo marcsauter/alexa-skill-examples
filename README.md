@@ -95,7 +95,7 @@ My development endpoint is a subdomain of a domain that has a wildcard certifica
 # python account_balance.py
 ```
 
-All Account Balances are hard-coded. There would be a request to your Account Services.
+All Account Balances are hard-coded. There would be a request to your Account Service.
 
 ### Account Balance with pin
 ```
@@ -112,4 +112,14 @@ Your PIN is **1984**. The PIN is hard-coded.
 ```
 
 Your favorite pet is a **monkey**. The Answer is hard-coded.
+
+# Presentation
+
+To start the presentation install [[https://golang.org/dl/][The Go Programming Language]] for your Operating System.
+```
+go get golang.org/x/tools/cmd/present
+cd <path to alexa-skill-examples>/presentations/alexa
+present -notes -base ../www -http=<hostname>:<port>
+```
+
 
