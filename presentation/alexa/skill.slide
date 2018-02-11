@@ -66,6 +66,43 @@ All these companies have similar service for ASR (automated speech recognition),
 
 .image images/interaction.svg 500 _
 
+* Configuration
+The configuration for an Alexa skill must include the following components to define the voice interface:
+
+An Intent Schema:
+
+- A JSON structure which declares the set of intents your service can accept and process.
+
+The Spoken Input Data:
+
+- Sample Utterances: A structured text file that connects the intents to likely spoken phrases and containing as many representative phrases as possible.
+- Custom Values (required for use with custom slots): A list of values for specific items used by your skill and referenced in the intents when using a custom slot type.
+
+* Sample Utterances
+
+- Alexa, time.
+- Alexa, what's the time.
+- Alexa, tell me the time.
+- Alexa, please tell me the time.
+
+[[https://developer.amazon.com/de/docs/custom-skills/custom-interaction-model-reference.html#sample-utterances-syntax][Sample Utterances Syntax]]
+
+* Custom Values / Custom Slot Type
+
+Custom Slot Type: *ACCOUNT_TYPE*
+
+Valid values:
+
+- Savings Account
+- Student Account
+- Private Account
+
+[[https://developer.amazon.com/de/docs/custom-skills/custom-interaction-model-reference.html#custom-slot-syntax][Custom Slot Type Syntax]]
+
+* Built-in Types
+
+There are a number of slot types provided by the alexa skill kit. [[https://developer.amazon.com/de/docs/custom-skills/slot-type-reference.html][Slot Type Reference]]
+
 * Launch Request
 The *Launch*Request* is the first request after the Skill has been launched.
 
@@ -156,6 +193,7 @@ SSML:
     </speak>
 
 : demo
+
 
 * Context
 Each Request has context informations:
