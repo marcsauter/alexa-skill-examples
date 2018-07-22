@@ -26,8 +26,19 @@
 * [Developing Alexa Skills (Training by Big Nerd Ranch)](https://developer.amazon.com/de/alexa-skills-kit/big-nerd-ranch)
 
 ### Flask Ask
-* [Flask Ask Documentation](https://flask-ask.readthedocs.io/en/latest)
 * [Flask-Ask: A New Python Framework for Rapid Alexa Skills Kit Development](https://developer.amazon.com/de/blogs/post/tx14r0iyygh3skt/flask-ask:-a-new-python-framework-for-rapid-alexa-skills-kit-development)
+* [Flask-Ask Documentation](https://flask-ask.readthedocs.io/en/latest)
+* [Deploy Flask-Ask Skills to AWS Lambda with Zappa](https://developer.amazon.com/blogs/alexa/post/8e8ad73a-99e9-4c0f-a7b3-60f92287b0bf/new-alexa-tutorial-deploy-flask-ask-skills-to-aws-lambda-with-zappa)
+
+#### Known Issues
+Before installing Flask-Ask you need to downgrade pip:
+```
+# pip install pip==9.0.3
+```
+After installing Flask-Ask with all its dependencies you need to downgrade the cryptography module:
+```
+# pip install 'cryptography<2.2'
+```
 
 ### ngrok
 * [ngrok - Secure tunnels to localhost](https://ngrok.com)
