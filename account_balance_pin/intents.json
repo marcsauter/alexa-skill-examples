@@ -1,29 +1,23 @@
 {
-    "intents": [
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "account balance with pin",
+      "intents": [
         {
-            "name": "AccountIntent",
-            "samples": [
-                "{account}"
-            ],
-            "slots": [
-                {
-                    "name": "account",
-                    "samples": [],
-                    "type": "ACCOUNT_TYPE"
-                }
-            ]
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
         },
         {
-            "name": "AMAZON.CancelIntent",
-            "samples": []
+          "name": "AMAZON.CancelIntent",
+          "samples": []
         },
         {
-            "name": "AMAZON.HelpIntent",
-            "samples": []
+          "name": "AMAZON.HelpIntent",
+          "samples": []
         },
         {
-            "name": "AMAZON.StopIntent",
-            "samples": []
+          "name": "AMAZON.StopIntent",
+          "samples": []
         },
         {
             "name": "PINIntent",
@@ -38,34 +32,49 @@
                     "type": "AMAZON.NUMBER"
                 }
             ]
-        }
-    ],
-    "types": [
+        },
         {
-            "name": "ACCOUNT_TYPE",
-            "values": [
-                {
-                    "id": null,
-                    "name": {
-                        "synonyms": [],
-                        "value": "Private Account"
-                    }
-                },
-                {
-                    "id": null,
-                    "name": {
-                        "synonyms": [],
-                        "value": "Student Account"
-                    }
-                },
-                {
-                    "id": null,
-                    "name": {
-                        "synonyms": [],
-                        "value": "Savings Account"
-                    }
-                }
-            ]
+          "name": "AccountIntent",
+          "samples": [
+            "{account}"
+          ],
+          "slots": [
+            {
+              "name": "account",
+              "samples": [],
+              "type": "ACCOUNT_TYPE"
+            }
+          ]
         }
-    ]
+      ],
+      "types": [
+        {
+          "name": "ACCOUNT_TYPE",
+          "values": [
+            {
+              "id": null,
+              "name": {
+                "synonyms": [],
+                "value": "Private Account"
+              }
+            },
+            {
+              "id": null,
+              "name": {
+                "synonyms": [],
+                "value": "Student Account"
+              }
+            },
+            {
+              "id": null,
+              "name": {
+                "synonyms": [],
+                "value": "Savings Account"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
 }
