@@ -1,7 +1,7 @@
 {
   "interactionModel": {
     "languageModel": {
-      "invocationName": "account balance with pin",
+      "invocationName": "credit balance",
       "intents": [
         {
           "name": "AMAZON.FallbackIntent",
